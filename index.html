@@ -18,10 +18,10 @@
             <div class="contacts">
             <ul class="contacts-marks">
                 
-                    <li><i class="fa-solid fa-user-tie icon-spacing"></i>  Mees (09.05.1977)</li>
-                    <li><i class="fa-solid fa-phone icon-spacing"></i>  +372 5300 50 43</li>
-                    <li><i class="fa-solid fa-envelope icon-spacing"></i>   roman.batischev@gmail.com</li>
-                    <li><i class="fa-solid fa-location-dot icon-spacing"></i>   Lääne 4-55, Tartu, 50605</li>
+                    <li><i class="fa-solid fa-user-tie icon-spacing"></i> <span id="bDateSex"></span></li>
+                    <li><i class="fa-solid fa-phone icon-spacing"></i> <span id="phoneNumber"></span></li>
+                    <li><i class="fa-solid fa-envelope icon-spacing"></i> <span id="eMail"></span></li>
+                    <li><i class="fa-solid fa-location-dot icon-spacing"></i> <span id="adress"></span></li>
                     <li><a href="#"></a><i class="fa fa-linkedin-square icon-spacing" style="font-size:24px"></i></li>
 
                 
@@ -115,6 +115,15 @@
      </div>
 
     <script src="app.js"></script>
+    <script src="profile.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $.getJSON('data.json', function(data) {
+    console.log(data); // Проверьте данные
+    // Обработка данных
+  });
+</script>
     
 </body>
 </html>
